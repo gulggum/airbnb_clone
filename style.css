@@ -1,0 +1,11 @@
+@import "./reset.css";
+#container {
+  width: 80%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+header .logo {
+  color: #dd0f63;
+  font-size: 2rem;
+}/*# sourceMappingURL=style.css.map */

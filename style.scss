@@ -1,0 +1,16 @@
+@import "./reset.css";
+
+$logoColor: #dd0f63;
+
+#container {
+  width: 80%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+header {
+  .logo {
+    color: $logoColor;
+    font-size: 2rem;
+  }
+}
