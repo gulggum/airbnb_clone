@@ -68,7 +68,7 @@ header .header_right:hover {
   padding: 11px 8px 11px 40px;
   border-radius: 50px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .search div {
   display: flex;
@@ -111,6 +111,7 @@ header .header_right:hover {
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .tripType .type_icons {
   display: flex;
@@ -130,4 +131,84 @@ header .header_right:hover {
 .tripType .type_icons img {
   width: 30px;
   margin-bottom: 10px;
+}
+
+.productLists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: center;
+  row-gap: 50px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.productLists img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+}
+.productLists span {
+  display: block;
+}
+.productLists .product {
+  position: relative;
+  cursor: pointer;
+}
+.productLists .product .product_picture {
+  margin-bottom: 10px;
+}
+.productLists .product .likeMark {
+  position: absolute;
+  top: 20px;
+  right: 10%;
+}
+.productLists .product .productPicture_nextBtn {
+  position: absolute;
+  top: 36%;
+  right: 30px;
+}
+.productLists .product .product_info {
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0px 20px;
+  line-height: 20px;
+}
+.productLists .product .product_info .product_nation {
+  display: flex;
+  justify-content: space-between;
+}
+.productLists .product .product_info .product_view,
+.productLists .product .product_info .product_date {
+  color: #a7a7a7;
+  font-size: 0.9rem;
+}
+.productLists .product .product_info .product_price {
+  margin-top: 10px;
+}
+
+.add {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.add span:first-child {
+  font-size: 1.2rem;
+  padding: 20px 0px;
+}
+.add span:last-child {
+  width: 80px;
+  padding: 18px 10px;
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 40px;
+  height: 500px;
+  background-color: #f7f7f7;
 }/*# sourceMappingURL=style.css.map */
