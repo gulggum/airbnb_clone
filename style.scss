@@ -1,16 +1,74 @@
 @import "./reset.css";
 
+//color변수
 $logoColor: #dd0f63;
+$subTextColor: #a7a7a7;
+$hoverBgColor: #f3f3f3;
+
+//padding변수
+$spanPadding: 10px 15px;
 
 #container {
-  width: 80%;
+  width: 90%;
   max-width: 1920px;
   margin: 0 auto;
+  padding: 30px 0px;
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   .logo {
+    width: 20%;
     color: $logoColor;
     font-size: 2rem;
+    cursor: pointer;
+  }
+  //header 중앙
+  .header_center {
+    span {
+      margin-right: 10px;
+      color: $subTextColor;
+      padding: $spanPadding;
+      border-radius: 20px;
+      &:hover {
+        color: black;
+        cursor: pointer;
+        background-color: $hoverBgColor;
+      }
+    }
+  }
+
+  //header 오른쪽
+  .header_right {
+    display: flex;
+    align-items: center;
+    span {
+      margin-right: 20px;
+      padding: $spanPadding;
+      border-radius: 15px;
+      &:hover {
+        color: black;
+        cursor: pointer;
+        background-color: $hoverBgColor;
+      }
+    }
+    .myPage {
+      width: 80px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 8px 1px 8px 1px;
+      border: 1px solid $subTextColor;
+      border-radius: 30px;
+
+      i:last-child {
+        font-size: 1.8rem;
+      }
+    }
+    &:hover {
+      background-color: tomato;
+    }
   }
 }

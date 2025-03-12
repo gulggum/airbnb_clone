@@ -1,11 +1,59 @@
 @import "./reset.css";
 #container {
-  width: 80%;
+  width: 90%;
   max-width: 1920px;
   margin: 0 auto;
+  padding: 30px 0px;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 header .logo {
+  width: 20%;
   color: #dd0f63;
   font-size: 2rem;
+  cursor: pointer;
+}
+header .header_center span {
+  margin-right: 10px;
+  color: #a7a7a7;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+header .header_center span:hover {
+  color: black;
+  cursor: pointer;
+  background-color: #f3f3f3;
+}
+header .header_right {
+  display: flex;
+  align-items: center;
+}
+header .header_right span {
+  margin-right: 20px;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+header .header_right span:hover {
+  color: black;
+  cursor: pointer;
+  background-color: #f3f3f3;
+}
+header .header_right .myPage {
+  width: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 1px 8px 1px;
+  border: 1px solid #a7a7a7;
+  border-radius: 30px;
+}
+header .header_right .myPage i:last-child {
+  font-size: 1.8rem;
+}
+header .header_right:hover {
+  background-color: tomato;
 }/*# sourceMappingURL=style.css.map */
