@@ -1,7 +1,7 @@
 @import "./reset.css";
 
 //color변수
-$logoColor: #dd0f63;
+$logoColor: #e41d57;
 $subTextColor: #a7a7a7;
 $hoverBgColor: #f3f3f3;
 
@@ -19,6 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
   .logo {
     width: 20%;
     color: $logoColor;
@@ -70,5 +71,46 @@ header {
     &:hover {
       background-color: tomato;
     }
+  }
+}
+
+.search {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 8px 11px 40px;
+  border-radius: 50px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  div {
+    display: flex;
+    flex-direction: column;
+    span {
+      margin-bottom: 5px;
+      &:first-child {
+        font-size: 0.8rem;
+      }
+      &:last-child {
+        color: $subTextColor;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  i {
+    color: white;
+    padding: 15px;
+    background-color: $logoColor;
+    border-radius: 50%;
+  }
+
+  .travelLocation {
+    border-radius: 50px;
+    &:hover {
+      background-color: $hoverBgColor;
+    }
+  }
+  .traveller {
+    display: flex;
   }
 }

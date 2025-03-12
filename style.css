@@ -10,10 +10,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 header .logo {
   width: 20%;
-  color: #dd0f63;
+  color: #e41d57;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -56,4 +57,44 @@ header .header_right .myPage i:last-child {
 }
 header .header_right:hover {
   background-color: tomato;
+}
+
+.search {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 8px 11px 40px;
+  border-radius: 50px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.search div {
+  display: flex;
+  flex-direction: column;
+}
+.search div span {
+  margin-bottom: 5px;
+}
+.search div span:first-child {
+  font-size: 0.8rem;
+}
+.search div span:last-child {
+  color: #a7a7a7;
+  font-size: 0.9rem;
+}
+.search i {
+  color: white;
+  padding: 15px;
+  background-color: #e41d57;
+  border-radius: 50%;
+}
+.search .travelLocation {
+  border-radius: 50px;
+}
+.search .travelLocation:hover {
+  background-color: #f3f3f3;
+}
+.search .traveller {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
