@@ -13,6 +13,7 @@ $spanPadding: 10px 15px;
   max-width: 1920px;
   margin: 0 auto;
   padding: 30px 0px;
+  overflow: hidden;
 }
 
 header {
@@ -56,6 +57,7 @@ header {
       }
     }
     .myPage {
+      cursor: pointer;
       width: 80px;
       display: flex;
       justify-content: space-around;
@@ -63,13 +65,12 @@ header {
       padding: 8px 1px 8px 1px;
       border: 1px solid $subTextColor;
       border-radius: 30px;
-
       i:last-child {
         font-size: 1.8rem;
       }
     }
-    &:hover {
-      background-color: tomato;
+    .myPage:hover {
+      background-color: $hoverBgColor;
     }
   }
 }
@@ -81,13 +82,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 11px 8px 11px 40px;
   border-radius: 50px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+
   div {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: 11px 0px 11px 40px;
+    &:hover {
+      background-color: $hoverBgColor;
+      cursor: pointer;
+      border-radius: 40px;
+    }
     span {
       margin-bottom: 5px;
       &:first-child {
@@ -100,20 +108,14 @@ header {
     }
   }
   i {
+    width: 10%;
     color: white;
     padding: 15px;
     background-color: $logoColor;
     border-radius: 50%;
-  }
-
-  .travelLocation {
-    border-radius: 50px;
     &:hover {
-      background-color: $hoverBgColor;
+      cursor: pointer;
     }
-  }
-  .traveller {
-    display: flex;
   }
 }
 
@@ -131,20 +133,26 @@ header {
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  a {
+    display: block;
+  }
   .type_icons {
     display: flex;
     width: 90%;
     overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     li {
-      width: 100px;
+      padding-right: 50px;
+      min-width: 50px;
       font-size: 0.8rem;
       a {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-      }
-      span {
       }
     }
     img {
@@ -241,4 +249,10 @@ footer {
   margin-top: 40px;
   height: 500px;
   background-color: #f7f7f7;
+}
+
+//모바일 반응형
+
+@media screen and (max-width: 576px) {
+  //해당 클래스 불러와서 모바일형일떈 이런식으로 바꿔주겠다 코드
 }
